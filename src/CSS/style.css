@@ -25,10 +25,10 @@ img {
 /* styles */
 .container {
   display: flex;
-
-
+  flex-direction: column;
   font-family: 'Inter', sans-serif;
   background-color: var(--white);
+  min-height: 100vh;
 }
 
 header {
@@ -131,6 +131,8 @@ footer {
   height: 5rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  margin-top: auto;
 }
 
 footer p {
