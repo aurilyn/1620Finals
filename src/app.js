@@ -51,4 +51,20 @@ const contactsList = [
   },
 ]
 
-// Your code goes here
+function displayCards(){
+  const startofPage = document.querySelector('#display_all_contacts')
+  startofPage.innerHTML = ''
+  for (contact in contactsList){
+    const template = `
+    <div class="card">
+    <h1>${contactsList[contact].name}</h1>
+    </div>
+    `
+    startofPage.insertAdjacentHTML('beforeend', template)
+  }
+}
+
+function initpage(){
+  displayCards()
+}
+
